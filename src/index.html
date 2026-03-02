@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ac81250de6.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <header>
+        <!-- navbar starts from here  -->
+        <nav class="p-2 lg:p-3 flex bg-white justify-between items-center">
+            <a href="#" class="flex items-center gap-1.5 lg:gap-2">
+                <img src="./assests/logo.png" alt="logo" class="object-cover max-h-12 max-w-12" />
+                <h1 class="text-lg font-bold font-display">ToDesktop</h1>
+            </a>
+
+            <ul class="hidden md:flex font-medium gap-6 lg:gap-12">
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Changelogs</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">login</a></li>
+            </ul>
+            <button class="p-2 md:hidden" onclick="handlemenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <button
+                class="hidden md:flex items-center gap-1.5 border-2 border-solid border-gray-400 px-2 py-2 rounded-lg font-primary font-bold hover:border-gray-800 lg:px-6 lg:gap-2">
+                <img src="./assests/electron.svg" />
+                <span>Electron Developers</span>
+                <span class="hidden lg:inline"><i class="fa-solid fa-arrow-right-arrow-left"></i></span>
+            </button>
+
+            <div class="fixed bg-white inset-0  flex-col gap-2 hidden md:hidden" id="nav-dialog">
+                <div class="flex justify-between items-center p-2">
+                    <a href="#" class="flex items-center gap-1.5 ">
+                        <img src="./assests/logo.png" alt="logo" class="object-cover max-h-12 max-w-12" />
+                        <h1 class="text-lg font-bold font-display">ToDesktop</h1>
+                    </a>
+
+                    <button class="p-2 md:hidden" onclick="handlemenu()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+
+                <div>
+                    <ul class="ml-2 my-6 px-5 flex flex-col font-medium">
+                        <li class=" py-4 px-2 hover:bg-gray-50 rounded-lg "><a href="#">Pricing</a></li>
+                        <li class=" py-4 px-2 hover:bg-gray-50 rounded-lg"><a href="#">Docs</a></li>
+                        <li class="py-4 px-2 hover:bg-gray-50 rounded-lg"><a href="#">Changelogs</a></li>
+                        <li class="py-4 px-2 hover:bg-gray-50 rounded-lg"><a href="#">Blogs</a></li>
+                        <li class="py-4 px-2 hover:bg-gray-50 rounded-lg"><a href="#">login</a></li>
+                    </ul>
+
+                    <div class="h-[1px] bg-gray-400 m-1"></div>
+
+                    <button
+                        class="w-full flex items-center gap-1.5 mx-5 px-2 py-4 font-primary font-medium mt-6 hover:bg-gray-50 rounded-lg ">
+                        <img src="./assests/electron.svg" />
+                        <span>Electron Developers</span>
+                    </button>
+
+                </div>
+            </div>
+        </nav>
+        <!-- navbar ends  -->
+    </header>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
